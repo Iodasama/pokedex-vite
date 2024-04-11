@@ -15,7 +15,7 @@ const PokemonsDetails= ()=> {
     setPokemon(data);
         });
 
-    },[]);
+    },[pokemonId]);
 
     return (
         <section>
