@@ -4,8 +4,8 @@ const ListPokemonsPage = () => {
 
     return ( 
         <>
-       <ChineseHeader />
-        <ListPokemons />
+            <ChineseHeader />
+            <ListPokemons />
         </>
     )
 

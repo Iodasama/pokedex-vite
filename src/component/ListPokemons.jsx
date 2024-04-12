@@ -25,19 +25,34 @@ const ListPokemons= ()=> {
                             return ( 
                                     <article key = {pokemon.id}>
                                     <h2> {pokemon.name}</h2>
+                                    
                                     {pokemon.apiTypes.map((type)=>{
                                          return(
-                                            <Link to={`/pokemonsbytype/${type.name}`} key={type.name}>
+                                            <div key={pokemon.id}>
+                                           <Link to={`/pokemonsbytype/${type.name}`} key={type.name}>
                                             {type.name};
-                                            </Link>
+                                            
+                                           </Link>
+                                           
+                                    
+                                            <Link to = {`/pokemon-resistance/${type.name}`}> Poke that got resistance to {type.name}; 
+                                        
+    
+                                        </Link>
+                                      
+                                        </div>
+                                            
+                                           
                                          )
                                         
                                     })}
-                                   
-
+                                    
                                     <Link to = {`/pokemonsdetails/${pokemon.id}`}>
                                     宝可梦到了！
                                     </Link>
+
+                                   
+
                                     </article>
                             );
                         }

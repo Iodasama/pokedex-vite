@@ -1,5 +1,4 @@
 import ChineseHeader from "../component/Header";
-//import ListPokemons from "../component/ListPokemons";
 
 
 
@@ -11,12 +10,17 @@ const HomePage = () =>{
             <ChineseHeader/>
 
             <p>神奇宝贝大搜捕！！</p> 
+        
 
-            {/*<ListPokemons />*/}
+            
 
         </>
+
+        
      )
     
 }
+
+<h1></h1>
 
 export default HomePage;

@@ -28,7 +28,8 @@ const PokemonByType= ()=> {
                                         return<p key ={type.name}>{type.name}</p>;
                                     })}
 
-
+                                    <Link to = {`/pokemon-resistance/${pokemon.id}`}>
+                                    </Link>
                                     <Link to = {`/pokemonsdetails/${pokemon.id}`}>
                                     宝可梦到了！
                                     </Link>
