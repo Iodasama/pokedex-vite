@@ -1,5 +1,5 @@
-import ChineseHeader from "../component/Header";
-import SearchResults from "../component/SearchResults";
+import ChineseHeader from "../../component/public/header/Header";
+import SearchResults from "../../component/SearchResults";
 const SearchResultsPage = () => {
   return (
     <>

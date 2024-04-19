@@ -1,5 +1,5 @@
-import ChineseHeader from "../component/Header";
-import PokemonRandomTeam from "../component/PokemonRandomTeam";
+import ChineseHeader from "../../component/public/header/Header";
+import PokemonRandomTeam from "../../component/PokemonRandomTeam";
 
 const PokemonRandomTeamPage = () => {
   return (

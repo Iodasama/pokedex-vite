@@ -21,48 +21,29 @@ const ListPokemons= ()=> {
             <p>Pokemons loading … </p>
             ) : ( 
             <>    
-            {pokemons.map ((pokemon)=>{ 
-                            return ( 
-                                    <article key = {pokemon.id}>
-                                    <h2> {pokemon.name}</h2>
-                                    
-                                    {pokemon.apiTypes.map((type)=>{
-                                         return(
-                                            <div key={pokemon.id}>
-                                           <Link to={`/pokemonsbytype/${type.name}`} key={type.name}>
-                                            {type.name};
-                                            
-                                           </Link>
-                                           
-                                    
-                                            <Link to = {`/pokemon-resistance/${type.name}`}> Poke that got resistance to {type.name}; 
-                                        
-    
-                                        </Link>
-                                      
-                                        </div>
-                                            
-                                           
-                                         )
-                                        
-                                    })}
-                                    
-                                    <Link to = {`/pokemonsdetails/${pokemon.id}`}>
-                                    宝可梦到了！
-                                    </Link>
-
-                                   
-
-                                    </article>
+                {pokemons.map ((pokemon)=>{ 
+                    return ( 
+                        <article key = {pokemon.id}>
+                            <h2> {pokemon.name}</h2>                            
+                            {pokemon.apiTypes.map((type)=>{
+                            return(
+                            <div key={pokemon.id}>
+                                <Link to={`/pokemonsbytype/${type.name}`} key={type.name}>{type.name};</Link>
+                                <Link to = {`/pokemon-resistance/${type.name}`}> Poke that got resistance to {type.name}; </Link>
+                            </div>
+                            )
+                            })}
+                            <Link to = {`/pokemonsdetails/${pokemon.id}`}>宝可梦到了！</Link>
+                        </article>
                             );
                         }
-                    )
-            }
-            </>
                 )
+                }   
+            </>
+            )
             }
         </section>
-            );
+    );
 };  
 
 export default ListPokemons;

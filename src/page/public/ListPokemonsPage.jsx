@@ -1,5 +1,5 @@
-import ChineseHeader from "../component/Header";
-import ListPokemons from "../component/ListPokemons";
+import ChineseHeader from "../../component/public/header/Header";
+import ListPokemons from "../../component/ListPokemons";
 const ListPokemonsPage = () => { 
 
     return ( 

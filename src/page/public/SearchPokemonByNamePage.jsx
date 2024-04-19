@@ -1,5 +1,5 @@
-import ChineseHeader from "../component/Header";
-import SearchPokemonByName from "../component/SearchPokemonByName";
+import ChineseHeader from "../component/public/header";
+import SearchPokemonByName from "../../component/SearchPokemonByName";
 
 const SearchPokemonByNamePage = () => {
   return (

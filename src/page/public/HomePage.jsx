@@ -1,4 +1,4 @@
-import ChineseHeader from "../component/Header";
+import ChineseHeader from "../../component/public/header/Header";
 
 
 
